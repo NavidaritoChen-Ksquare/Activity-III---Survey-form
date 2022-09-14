@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-III---Survey-form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <h1>Survey to join a university program</h1>
+
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+         <li>
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="user_name">
+         </li>
+         <li>
+           <label for="mail">E-mail:</label>
+           <input type="email" id="mail" name="user_email">
+         </li>
+         <li>
+            <label for="age">How old are you?:</label>
+            <input type="number" id="age" name="user_age">
+         </li>
+         <li>
+            <p>Which area do you want to join?</p>
+            <input type="radio" id="area1" name="age" value="1">
+            <label for="area1">Engineering</label><br>
+            <input type="radio" id="area2" name="age" value="2">
+            <label for="area2">Medicine</label><br>  
+            <input type="radio" id="area3" name="age" value="3">
+            <label for="area3">Business</label>
+         </li>
+         <li>
+            <label for="age">What program will you join?:</label>
+            <select name="course_type" id="course_type">
+                <option value="1">Technical</option>
+                <option value="2">Degree</option> 
+                <option value="3">Specialization</option>
+                <option value="4">Master</option>
+                   
+            </select>
+         </li>
+         <li>
+            <label for="another_survey">Want to take another survey?:</label>
+            <input type="checkbox" id="another_survey" name="another_survey">
+         </li>
+         <li>
+           <label for="feedback">Feedback or suggestion:</label>
+           <textarea id="feedback" name="feedback"></textarea>
+         </li>
+
+         <li class="button">
+            <button type="submit">Submit</button>
+          </li>
+
+        </ul>
+       </form>
+    
+</body>
+</html>
